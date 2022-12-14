@@ -1,0 +1,30 @@
+// Variables
+
+$primary-color: hsl(0, 0%, 15%);
+$text-color: hsl(0, 0%, 100%);
+$accent-color: hsl(327.35, 84.97%, 66.08%);
+
+$font-weights: (
+
+    "regular": 400,
+    "medium": 500,
+    "bold": 700
+
+);
+
+// Flex mixins
+@mixin flexCenter {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@mixin flexSpaceBetween {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}

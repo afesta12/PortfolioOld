@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+// Variables
+
+$primary-color: #090a0f;
+$text-color: hsl(0, 0%, 100%);
+$accent-color: hsl(327.35, 84.97%, 66.08%);
+$roboto: 'Roboto', sans-serif;
+
+
+$font-weights: (
+
+    "regular": 400,
+    "medium": 500,
+    "bold": 700
+
+);
+
+// Resets
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+// Mixins
+@mixin transition-ease {
+    
+    transition: all 0.5s ease-in-out;
+
+}
+
+// Functions
+@function set-text-color($color) {
+
+    @if(lightness($color) > 40%) {
+
+        @return #000;
+
+    } @else {
+
+        @return $text-color;
+
+    }
+
+}

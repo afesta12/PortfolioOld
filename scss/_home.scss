@@ -1,0 +1,44 @@
+.home {
+
+    height: 100%;
+    padding-top: 60vh;
+    overflow: hidden;
+
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+
+    &__name {
+
+        font-size: 3rem;
+        padding-bottom: 1rem;
+        margin-top: 1rem;
+        border-bottom: 2px solid set-text-color($primary-color);
+
+        &--last {
+
+            color: $accent-color;
+            font-weight: map-get($font-weights, bold);
+
+        }
+
+    }
+
+    &__container {
+
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+    }
+}
+
+.pad {
+
+    padding-left: .5rem;
+
+}
+
+.top {
+
+    padding-top: .5rem;
+
+}
