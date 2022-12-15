@@ -1,0 +1,64 @@
+.box {
+
+    height: 30vh;
+    width: 55vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 35%;
+    left: 50%;
+
+    &__moon {
+
+        background-color: $text-color;
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        position: absolute;
+        margin: auto;
+        left: 4.15rem;
+        right: 0;
+        top: 0;
+        bottom: 5rem;
+        box-shadow: 0 0 0 0.6em rgba(255, 255, 255, 0.05),
+                    0 0 0 1.2em rgba(255, 255, 255, 0.05),
+                    0 0 0 1.8em rgba(255, 255, 255, 0.05);
+
+    }
+
+    &__orbit {
+
+        height: 12rem;
+        width: 12rem;
+        border-radius: 50%;
+        position: absolute;
+        left: -3rem;
+        bottom: -3rem;
+        animation: orbit 15s infinite linear;
+
+        @keyframes orbit {
+            
+            100% {
+
+                transform: rotate(360deg);
+
+            }
+
+        }
+
+        div {
+
+            background-color: $text-color;
+            height: 2rem;
+            width: 2rem;
+            border-radius: 50%;
+            position: absolute;
+            top: -.5rem;
+            left: -.5rem;
+            color: $text-color;
+            box-shadow: 0 0 0 0.6em rgba(255, 255, 255, 0.05);
+
+        }
+
+    }
+
+}

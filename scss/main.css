@@ -150,6 +150,59 @@
   transition-delay: 0.55s;
 }
 
+.box {
+  height: 30vh;
+  width: 55vw;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 35%;
+  left: 50%;
+}
+.box__moon {
+  background-color: rgb(248, 248, 255);
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  left: 4.15rem;
+  right: 0;
+  top: 0;
+  bottom: 5rem;
+  box-shadow: 0 0 0 0.6em rgba(255, 255, 255, 0.05), 0 0 0 1.2em rgba(255, 255, 255, 0.05), 0 0 0 1.8em rgba(255, 255, 255, 0.05);
+}
+.box__orbit {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+  position: absolute;
+  left: -3rem;
+  bottom: -3rem;
+  -webkit-animation: orbit 15s infinite linear;
+          animation: orbit 15s infinite linear;
+}
+@-webkit-keyframes orbit {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes orbit {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.box__orbit div {
+  background-color: rgb(248, 248, 255);
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+  color: rgb(248, 248, 255);
+  box-shadow: 0 0 0 0.6em rgba(255, 255, 255, 0.05);
+}
+
 .stars {
   width: 1px;
   height: 1px;
@@ -241,6 +294,9 @@
   -o-border-image: linear-gradient(to right, #090a0f 0%, #CEA1F0 50%, #090a0f 100%) 0 0 100% 0;
      border-image: linear-gradient(to right, #090a0f 0%, #CEA1F0 50%, #090a0f 100%) 0 0 100% 0;
 }
+.about__bio h2 {
+  margin-bottom: 0.3rem;
+}
 
 .jobs {
   width: 60vw;
@@ -257,10 +313,19 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 4px 0px, rgba(0, 0, 0, 0.05) 0px 1px 6px 0px, rgba(0, 0, 0, 0.1) 0px 8px 8px 0px, rgba(0, 0, 0, 0.1) 0px 16px 16px 0px, rgba(0, 0, 0, 0.15) 8px 32px 32px 0px, rgba(0, 0, 0, 0.15) 8px 64px 64px 0px;
 }
 .jobs__job h2, .jobs__job h3 {
-  margin: 0.5rem 0;
+  margin: 0.25rem 0;
 }
 .jobs__job h6 {
   margin: 0.3rem 0;
+}
+.jobs__job h2, .jobs__job h3, .jobs__job h6, .jobs__job p {
+  text-align: center;
+}
+.jobs__container {
+  border-bottom: 2px solid rgb(248, 248, 255);
+  -o-border-image: linear-gradient(to right, #1e2132 0%, #CEA1F0 50%, #1e2132 100%) 0 0 100% 0;
+     border-image: linear-gradient(to right, #1e2132 0%, #CEA1F0 50%, #1e2132 100%) 0 0 100% 0;
+  margin-bottom: 0.5rem;
 }
 
 body {

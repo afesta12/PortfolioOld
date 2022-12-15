@@ -19,6 +19,12 @@
         padding-bottom: .5rem;
         border-bottom: 2px solid set-text-color($primary-color);
         border-image: linear-gradient(to right, $primary-color 0%, #CEA1F0 50%, $primary-color 100%) 0 0 100% 0;
+        
+        h2 {
+
+            margin-bottom: .3rem;
+
+        }
 
     }
 }
@@ -46,7 +52,7 @@
 
         h2, h3 {
 
-            margin: .5rem 0;
+            margin: .25rem 0;
 
         }
 
@@ -55,6 +61,20 @@
             margin: .3rem 0;
 
         }
+
+        h2, h3, h6, p {
+
+            text-align: center;
+
+        }
+
+    }
+
+    &__container {
+
+        border-bottom: 2px solid set-text-color($primary-color);
+        border-image: linear-gradient(to right, lighten($primary-color, 11%) 0%, #CEA1F0 50%, lighten($primary-color, 11%) 100%) 0 0 100% 0;
+        margin-bottom: .5rem;
 
     }
 
