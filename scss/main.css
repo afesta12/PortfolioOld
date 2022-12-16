@@ -297,6 +297,13 @@
 .about__bio h2 {
   margin-bottom: 0.3rem;
 }
+.about__bio p {
+  color: rgb(248, 248, 255);
+}
+.about__bio a {
+  color: #CEA1F0;
+  text-decoration: underline;
+}
 
 .jobs {
   width: 60vw;
@@ -326,6 +333,16 @@
   -o-border-image: linear-gradient(to right, #1e2132 0%, #CEA1F0 50%, #1e2132 100%) 0 0 100% 0;
      border-image: linear-gradient(to right, #1e2132 0%, #CEA1F0 50%, #1e2132 100%) 0 0 100% 0;
   margin-bottom: 0.5rem;
+}
+.jobs__education {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.jobs__education p {
+  font-size: 0.8rem;
+  margin: 0.25rem 0;
+  color: rgb(248, 248, 255);
 }
 
 .projects {
@@ -365,6 +382,10 @@
 }
 .projects__item img {
   width: 100%;
+}
+.projects__item h6 {
+  margin-bottom: 0.25rem;
+  color: rgb(248, 248, 255);
 }
 .projects__item::after {
   content: "";
