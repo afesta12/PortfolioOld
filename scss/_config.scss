@@ -32,6 +32,16 @@ $font-weights: (
 
 }
 
+@mixin media-sm  {
+    
+    @media screen and (min-width: 660px) {
+        
+        @content;
+
+    }
+
+}
+
 @mixin media-md {
 
     @media screen and (min-width: 768px) {
