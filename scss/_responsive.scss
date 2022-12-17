@@ -1,5 +1,12 @@
 @include media-md {
 
+    .box {
+
+        top: 28%;
+        left: 72%;
+
+    }
+
     .menu-btn {
 
         visibility: hidden;
@@ -44,6 +51,8 @@
 
     .projects {
 
+        height: 70vh;
+
         &__items {
 
             grid-template-columns: repeat(2, 1fr);
@@ -56,8 +65,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            margin: 0;
-            padding: 0;
+            padding: 0 0 1rem 0;
         }
 
         img {
@@ -69,5 +77,54 @@
         }
 
     }
+
+    .contact {
+
+        h2 {
+
+            text-align: center;
+
+        }
+
+        &__container {
+
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
+    }
+    
+
+}
+
+@include media-lg {
+
+    .box {
+
+        top: 35%;
+        left: 80%;
+
+    }
+
+    .projects {
+
+        height: 70vh;
+        justify-content: space-evenly;
+
+        &__items {
+
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 1fr;
+
+        }
+
+    }
+
+    .contact__container {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+    
 
 }
