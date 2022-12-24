@@ -46,7 +46,9 @@ footer {
 }
 
 .projects {
-  height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,6 +56,7 @@ footer {
 }
 .projects__container {
   padding: 0.5rem;
+  margin-top: 2rem;
 }
 .projects__container h1 {
   color: rgb(248, 248, 255);
@@ -64,7 +67,7 @@ footer {
 }
 .projects__items {
   width: 60vw;
-  margin: -1rem auto 0 auto;
+  margin: 1rem auto 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 0.5rem;
@@ -122,6 +125,15 @@ footer {
 }
 .projects__btn:hover {
   color: rgb(248, 248, 255);
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
 .about {
