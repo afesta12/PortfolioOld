@@ -534,7 +534,7 @@ footer {
     grid-auto-rows: 1fr;
   }
   .projects__items {
-    width: 90vw;
+    width: 80vw;
     margin: -2rem auto 0 auto;
   }
   .contact {
@@ -612,7 +612,7 @@ footer {
     left: 80%;
   }
   .projects {
-    height: 70vh;
+    height: 100vh;
     justify-content: space-evenly;
   }
   .projects__items {
