@@ -584,7 +584,7 @@ footer {
     margin-top: 0;
   }
   .projects__items {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-auto-rows: 1fr;
   }
   .projects__item {
@@ -618,6 +618,12 @@ footer {
   .projects__items {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 1fr;
+  }
+  .contact {
+    padding-top: 50vh;
+  }
+  .text-secondary {
+    font-size: 1rem;
   }
   .contact__container {
     grid-template-columns: repeat(3, 1fr);
